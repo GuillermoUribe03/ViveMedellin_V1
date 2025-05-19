@@ -1,0 +1,17 @@
+<svg width="51" height="65" viewBox="0 0 51 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="globo">
+<g id="Group 6">
+<path id="Polygon 4" d="M27.1722 62.4512C26.3824 63.655 24.6176 63.655 23.8278 62.4512L5.88132 35.0971C5.00871 33.7671 5.96282 32 7.55355 32L43.4465 32C45.0372 32 45.9913 33.7671 45.1187 35.0971L27.1722 62.4512Z" fill="#FF652F"/>
+<circle id="Ellipse 1" cx="25.5" cy="23" r="23" fill="#FF652F"/>
+</g>
+<g id="Group 9">
+<circle id="Ellipse 2" cx="25.5" cy="24" r="18" fill="#FF652F"/>
+<path id="Rectangle 1" d="M17.5 30C17.5 25.5817 21.0817 22 25.5 22C29.9183 22 33.5 25.5817 33.5 30V40.1972C27.2528 42.5932 23.7461 42.6087 17.5 40.1972V30Z" fill="white"/>
+<path id="Rectangle 2" d="M8.5 29.5H13.5C15.1569 29.5 16.5 30.8431 16.5 32.5V39.5C14.1876 38.3116 12 36.5 11.5 36C11 35.5 8.57419 33.4458 8.5 29.5Z" fill="white"/>
+<path id="Rectangle 3" d="M42.5 29H37.5C35.8431 29 34.5 30.3431 34.5 32V39C36.8124 37.8116 39 36 39.5 35.5C40 35 42.4258 32.9458 42.5 29Z" fill="white"/>
+<circle id="Ellipse 3" cx="25.5" cy="14" r="5" fill="white"/>
+<circle id="Ellipse 4" cx="38" cy="22.5" r="4.5" fill="white"/>
+<circle id="Ellipse 5" cx="13" cy="22.5" r="4.5" fill="white"/>
+</g>
+</g>
+</svg>
