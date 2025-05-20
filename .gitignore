@@ -61,20 +61,6 @@ history/
 *.env.*
 .vscode/
 
-# Archivos de Imágenes y Fuentes
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.svg
-*.ico
-*.webp
-*.woff
-*.woff2
-*.ttf
-*.otf
-*.eot
-
 # Caché de npm, pnpm y yarn
 .npm/
 .pnpm/
