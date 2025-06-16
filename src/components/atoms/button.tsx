@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react";
+import React from "react";
 
 interface ButtonProps {
   text?: string;
@@ -8,7 +9,7 @@ interface ButtonProps {
   heightIcon?: string;
   iconPosition?: "left" | "right";
   className?: string;
-  onClick?: () => void;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 const Button = ({
@@ -21,7 +22,6 @@ const Button = ({
   className,
   onClick,
 }: ButtonProps) => {
-
   const colorClass =
     color === "blue"
       ? "bg-white text-altBlue hover:text-white hover:bg-altBlue border-darkGray hover:border-altBlue rounded-lg p-2 px-4 gap-4 font-semibold"
@@ -43,11 +43,13 @@ const Button = ({
       ? "bg-Gray2 text-black hover:text-gray-800 hover:bg-gray-300 border-transparent rounded-lg p-2 px-4 font-semibold"
       : "";
 
-
   return (
-    <button onClick={onClick} className={`${className} ${colorClass} flex justify-center items-center border-2 hover:cursor-pointer`}>
+    <button
+      onClick={onClick}
+      className={`${className} ${colorClass} flex justify-center items-center border-2 hover:cursor-pointer`}
+    >
       {icon && iconPosition !== "right" && (
-        <Icon icon={icon} width={widthIcon} height={heightIcon}/>
+        <Icon icon={icon} width={widthIcon} height={heightIcon} />
       )}
       <span>{text}</span>
       {icon && iconPosition === "right" && (

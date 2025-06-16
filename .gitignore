@@ -10,11 +10,6 @@
 .dist/
 .build/
 
-# Tailwind CSS y PostCSS
-postcss.config.*
-tailwind.config.*
-*.css.map
-
 # Lockfiles
 package-lock.json
 pnpm-lock.yaml
@@ -41,9 +36,8 @@ Thumbs.db
 Desktop.ini
 Icon?
 
-# Archivos de Configuración de TypeScript
+# Archivos de Configuración de TypeScript (se mantiene el soporte de TS)
 *.tsbuildinfo
-next-env.d.ts
 
 # Cache de Herramientas de Desarrollo
 .cache/
@@ -59,21 +53,6 @@ history/
 
 # Archivos de Configuración Personal
 *.env.*
-.vscode/
-
-# Archivos de Imágenes y Fuentes
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.svg
-*.ico
-*.webp
-*.woff
-*.woff2
-*.ttf
-*.otf
-*.eot
 
 # Caché de npm, pnpm y yarn
 .npm/
@@ -87,8 +66,6 @@ history/
 *.toml
 
 # ESLint y Prettier
-.eslintrc.*
-.prettierrc.*
 .eslintignore
 .prettierignore
 
@@ -108,20 +85,10 @@ storybook-static/
 # Otros Archivos Generados
 *.bak
 *.tmp
-*.log
 *.lock
-
-# Evitar Duplicados de globals.css
-src/app/globals.css
-
-# Archivos de Versionado
-*.bak
 *.orig
 *.rej
 *.swp
 *.swo
-*.tmp
 *.backup
-*.log
-*.lock
 *.diff

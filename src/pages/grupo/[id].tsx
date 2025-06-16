@@ -1,22 +1,26 @@
 import { useState } from "react";
+import { useRouter } from "next/router";
+import Header from "@/components/molecules/header";
 import Sidebar from "@/components/organisms/Sidebar";
 import SidebarSearch from "@/components/organisms/sidebarSearch";
-import Header from "@/components/molecules/header";
-import PublicationSection from "@/components/organisms/publicationSection";
+import GroupDetailsSection from "@/components/organisms/groupDetailsSection";
 import GroupSearchSection from "@/components/organisms/groupSearchSection";
 import NoResultsSection from "@/components/organisms/NoResultsSection";
 
-export default function BusquedaGrupos() {
+export default function Grupo() {
+  const router = useRouter();
+  const { id } = router.query;
+
   const [hasSearched, setHasSearched] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
-  const [hasResults, setHasResults] = useState(true); // simulado
+  const [hasResults, setHasResults] = useState(true); // Simulado
 
   const handleSearch = (term: string) => {
     setSearchTerm(term);
     setHasSearched(true);
-    
-    // Esta lógica se reemplazará cuando haya backend:
-    if (term.toLowerCase().includes("arte") || term === "") {
+
+    // Simulación de resultados
+    if (term.toLowerCase().includes("arte") || term.trim() === "") {
       setHasResults(true);
     } else {
       setHasResults(false);
@@ -37,7 +41,7 @@ export default function BusquedaGrupos() {
 
         <div className="p-8 w-[70%] max-h-213 overflow-auto">
           {!hasSearched ? (
-            <PublicationSection />
+            <GroupDetailsSection groupId={id as string} />
           ) : hasResults ? (
             <GroupSearchSection searchTerm={searchTerm} />
           ) : (
@@ -48,3 +52,4 @@ export default function BusquedaGrupos() {
     </div>
   );
 }
+

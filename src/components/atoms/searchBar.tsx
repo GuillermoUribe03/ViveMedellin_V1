@@ -4,15 +4,16 @@ import { Icon } from "@iconify/react";
 interface SearchBarProps {
     text: string;
     icon: string;
-    onSearch: () => void;
+    onSearch: (term: string) => void;
 }
 
 const SearchBar = ({ text, icon, onSearch }: SearchBarProps) => {
     const [inputValue, setInputValue] = useState("");
 
     const handleSearch = () => {
-        if (inputValue.trim() !== "") {
-            onSearch(); // activamos el cambio de vista
+        const term = inputValue.trim();
+        if (term !== "") {
+            onSearch(term); // Ahora sí enviamos el término real
         }
     };
 
